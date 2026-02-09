@@ -30,4 +30,4 @@
 
   ## Having Issues?
 
-  If `brew install` fails or you run into problems, please open an issue on the [main repository](https://github.com/maybedont/maybe-dont-issues).
+  If `brew install` fails or you run into problems, please open an issue on the [main repository](https://github.com/maybedont/maybe-dont-issues) or review our [documenation](https://maybedont.ai/doc/).
