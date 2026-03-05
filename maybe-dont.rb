@@ -5,23 +5,23 @@
 class MaybeDont < Formula
   desc "Guardrails for agentic AI"
   homepage "https://maybedont.ai"
-  version "1.3.0"
+  version "1.4.0"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/maybedont/releases/releases/download/v1.3.0/maybe-dont_1.3.0_darwin_x86_64.tar.gz"
-      sha256 "3896dfb18bd6db78a1e3224a9ca769dc5f7fe9259e1505265bc17f5002fa31df"
+      url "https://github.com/maybedont/releases/releases/download/v1.4.0/maybe-dont_1.4.0_darwin_x86_64.tar.gz"
+      sha256 "18777754edf6d75f93fe434ff379558356287f8e54e1edd9d55b487163886e32"
 
-      def install
+      define_method(:install) do
         bin.install "maybe-dont"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/maybedont/releases/releases/download/v1.3.0/maybe-dont_1.3.0_darwin_arm64.tar.gz"
-      sha256 "7bf21deab34340142fa2de8e0fb92cb7dc821d8d5dc2ae4e221a7b145bc6bae9"
+      url "https://github.com/maybedont/releases/releases/download/v1.4.0/maybe-dont_1.4.0_darwin_arm64.tar.gz"
+      sha256 "d33cdf62a1a3064c27b09579b14f6c7e584b11fdfe40a4d523dc4011d43468f7"
 
-      def install
+      define_method(:install) do
         bin.install "maybe-dont"
       end
     end
@@ -29,16 +29,16 @@ class MaybeDont < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/maybedont/releases/releases/download/v1.3.0/maybe-dont_1.3.0_linux_x86_64.tar.gz"
-      sha256 "d910d9c914d43f25fd67cd0a290488e6db9345920244d71d0b62cf992cd310c2"
-      def install
+      url "https://github.com/maybedont/releases/releases/download/v1.4.0/maybe-dont_1.4.0_linux_x86_64.tar.gz"
+      sha256 "5f45befb32337945cf562a8ef767aebd459b5f30c351614fd7940b09afe7c1f6"
+      define_method(:install) do
         bin.install "maybe-dont"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/maybedont/releases/releases/download/v1.3.0/maybe-dont_1.3.0_linux_arm64.tar.gz"
-      sha256 "b174319eb7b8998e1c133d62c1ecb9606cc0f2167480d8bffebe9b886d9a8d42"
-      def install
+      url "https://github.com/maybedont/releases/releases/download/v1.4.0/maybe-dont_1.4.0_linux_arm64.tar.gz"
+      sha256 "aeaaf0db5191b03675f09ebf1e0649474932917a0b125fbd1d72ab8b6f059da6"
+      define_method(:install) do
         bin.install "maybe-dont"
       end
     end
