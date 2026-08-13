@@ -9,5 +9,4 @@ Please use the primary documenation for installation and configuration guidance.
 
 
 ## License
-© 2025 Maybe Don't, Inc. All rights reserved.
-
+Licensed under the Apache License, Version 2.0 — see [LICENSE](LICENSE) and [NOTICE](NOTICE). The `maybe-dont` formula packages binaries built from the source at [maybedont/maybe-dont](https://github.com/maybedont/maybe-dont).
